@@ -12,6 +12,8 @@ class Platform(Rectangle):
         self.y = y
         self.randomize_platform()
         self.height = self.PLATFORM_HEIGHT
+        self.acceleration_factor = 1.15
+        self.level = 0
 
     def randomize_platform(self):
         self.x = random.uniform(-1, 1)
